@@ -32,6 +32,7 @@ services:
 
 networks:
   apps-dock-network:
+    driver: bridge
 
 volumes:
   dbdata:
