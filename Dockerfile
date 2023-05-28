@@ -17,7 +17,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 WORKDIR /var/www/html
 
 # Copy file proyek Laravel ke working directory di container
-COPY . /var/www/html
+COPY ./apps-for-dev /var/www/html
 
 # Set permission untuk folder storage dan bootstrap/cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
